@@ -171,7 +171,7 @@ After the **Deploy FastStream AsyncAPI Docs** workflow in `CI` has been successf
 To view the deployed [`AsyncAPI`](https://www.asyncapi.com/) documentation, open your web browser and navigate to the following URL:
 
 ```txt
-https://sternakt@gmail.com.github.io/faststream_cookiecutter_test/
+https://sternakt.github.io/faststream_cookiecutter_test/
 ```
 
 You will be directed to the [**GitHub Pages**](https://pages.github.com/) site where your [`AsyncAPI`](https://www.asyncapi.com/) documentation is hosted. This hosted documentation allows you to easily share your [`AsyncAPI`](https://www.asyncapi.com/) specifications with others and provides a centralized location for reviewing the [`AsyncAPI`](https://www.asyncapi.com/) documentation.
