@@ -27,7 +27,10 @@ to_greetings = broker.publisher(
 )
 
 
-@broker.subscriber("names", description="Consumes messages from names topic and produces messages to greetings topic")
+@broker.subscriber(
+    "names",
+    description="Consumes messages from names topic and produces messages to greetings topic",
+)
 async def on_names(msg: Name, logger: Logger) -> None:
     result = f"hello {msg.name}"
     logger.info(result)
@@ -50,11 +53,9 @@ async def publish_names() -> None:
         ]
         while True:
             name = random.choice(names)  # nosec
-            
+
             await broker.publish(Name(name=name), topic="names")
-            
-            
-            
+
             await asyncio.sleep(2)
 
     asyncio.create_task(_publish_names())
